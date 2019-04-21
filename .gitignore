@@ -3,3 +3,7 @@ __pycache__/
 *.png
 *.dat
 *.csv
+tmp/*
+csv/*
+!.gitkeep
+

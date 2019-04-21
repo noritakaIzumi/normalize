@@ -5,8 +5,8 @@ from Arguments.FileNameInfo import *
 
 
 def unique_by_row():
-    with open(FileNameInfo.outputFileName, 'w', newline='') as g:
-        writer = csv.writer(g, delimiter=',')
+    with open(FileNameInfo.outputFileName, 'w', newline='\n') as g:
+        writer = csv.writer(g, delimiter=',', lineterminator='\n')
         with open(FileNameInfo.inputFileName, 'r', newline='\n') as f:
             reader = csv.reader(f, delimiter=',')
             for row in reader:

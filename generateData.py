@@ -9,8 +9,8 @@ letters = string.ascii_uppercase
 
 
 def generate_data():
-    with open(DataGenerationInfo.outputFileName, mode='w', newline='') as f:
-        writer = csv.writer(f, delimiter=',')
+    with open(DataGenerationInfo.outputFileName, mode='w', newline='\n') as f:
+        writer = csv.writer(f, delimiter=',', lineterminator='\n')
         for i in range(DataGenerationInfo.rowCount):
             row = []
             for j in range(DataGenerationInfo.colCount):
